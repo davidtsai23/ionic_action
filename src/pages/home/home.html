@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center="true">登陆</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating><ion-icon ios="ios-contacts" md="md-contacts" color="primary" item-start large></ion-icon>用户名</ion-label>
+      <ion-input type="text" value="" #username></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating><ion-icon ios="ios-lock" md="md-lock" color="primary" item-start large></ion-icon>密码</ion-label>
+      <ion-input type="password" value="" #password></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div style="text-align: center; margin-left: 30px; margin-right: 30px;">
+    <button ion-button color="jdred" block (click)="login(username, password)">登陆</button>
+  </div>
+
+</ion-content>
